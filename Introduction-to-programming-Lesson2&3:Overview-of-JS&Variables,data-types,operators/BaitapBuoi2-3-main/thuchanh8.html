@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <input type ="text" id="dauvao">
+            <select name= ""id="chon 1">
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+             </select>
+             <select name="" id="chon 2">
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+             </select>
+     <button onclick="Lamgido()">convert</button>
+     <script>
+        function Lamgido() {
+            let giatrivao = document.getElementById('dauvao').value;
+            let chon1 = document.getElementById('chon 1').value;
+            let chon2 = document.getElementById('chon 2').value;
+            
+            if (chon1==chon2) {
+                alert(giatrivao);
+            }
+            if (chon1=="a" && chon2=="b") {
+                alert(giatrivao/24000);
+            }
+            if (chon1=="b" && chon2=="a") {
+                alert(giatrivao*24000);  
+            }
+        }
+     </script>
+             
+    </body>
+</html>

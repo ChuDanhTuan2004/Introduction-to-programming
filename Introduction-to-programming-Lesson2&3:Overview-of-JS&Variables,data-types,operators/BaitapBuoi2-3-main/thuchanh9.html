@@ -1,0 +1,69 @@
+<html>
+
+<body>
+
+    <input type="number" id="dauvao1">
+    <input type="number" id="dauvao2">
+
+
+    <button onclick="cong()">cộng</button>
+    <button onclick="tru()">trừ</button>
+    <button onclick="nhan()">nhân</button>
+    <button onclick="chia()">chia</button>
+    <div>Hien thi ket qua o day: <span id="result" style="color: red;"></span></div>
+    <script>
+
+        function getDataChon1() {
+            let data = parseInt(document.getElementById('dauvao1').value);
+
+            return data;
+        }
+
+        function getDataChon2() {
+            let data = parseInt(document.getElementById('dauvao2').value);
+
+            return data;
+        }
+
+        let showResult = (result) => {
+            document.getElementById("result").innerHTML = result;
+
+        }
+
+        function cong() {
+            let chon1 = getDataChon1();
+            let chon2 = getDataChon2();
+            let result = chon1 + chon2;
+
+            showResult(result);
+
+
+        }
+
+        function tru() {
+            let chon1 = getDataChon1();
+            let chon2 = getDataChon2();
+            let result = chon1 - chon2;
+
+            showResult(result);
+        }
+
+        function nhan() {
+            let chon1 = getDataChon1();
+            let chon2 = getDataChon2();
+            let result = chon1 * chon2;
+
+            showResult(result);
+        }
+
+        function chia() {
+            let chon1 = getDataChon1();
+            let chon2 = getDataChon2();
+            let result = chon1 / chon2;
+
+            showResult(result);
+        }
+    </script>
+</body>
+
+</html>
